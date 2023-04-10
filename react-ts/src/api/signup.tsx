@@ -17,7 +17,7 @@ const addUser = (user: any) => {
     return instance.post('/signup', user)
 }
 const signin = (user: any) => {
-    return axios.post('/signin', user)
+    return instance.post('/signin', user)
 }
 const updateUser = (user: IUser) => {
     return instance.put('/users/' + user._id, user)
